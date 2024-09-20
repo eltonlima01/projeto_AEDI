@@ -31,7 +31,7 @@ int main()
         switch (z)
         {
             // LOGIN
-        case 1: // Variáveis temporárias para o login
+        case 1: // VariÃ¡veis temporÃ¡rias para o login
             puts("User:");
             scanf("%s", loginuser);
             puts("Senha:");
@@ -42,7 +42,7 @@ int main()
             }
             else
             {
-                puts("E-mail ou senha inválidos!");
+                puts("E-mail ou senha invÃ¡lidos!");
             }
             break;
             // CADASTRO
@@ -50,13 +50,13 @@ int main()
             puts("Digite o seu nome:");
             scanf(" %99[^\n]", nome);
             limparbuffer();
-            puts("Crie um nome de usuário:");
+            puts("Crie um nome de usuÃ¡rio:");
             scanf("%s", usuario);
             limparbuffer();
             while(validaruser(usuario, user, qtduser) != 0)
             {
-                puts("Nome de usuário inválido!");
-                puts("Crie um nome de usuário:");
+                puts("Nome de usuÃ¡rio invÃ¡lido!");
+                puts("Crie um nome de usuÃ¡rio:");
                 scanf("%s", usuario);
             };
             puts("Digite o seu e-mail:");
@@ -64,7 +64,7 @@ int main()
             limparbuffer();
             if (validaremail(email, user, qtduser) != 0)
             {
-                puts("E-mail inválido!");
+                puts("E-mail invÃ¡lido!");
             }
             puts("Crie uma senha:");
             scanf("%s", senha);
@@ -85,12 +85,12 @@ int main()
             puts("Sai");
             break;
         default:
-            puts("Entrada inválida");
+            puts("Entrada invÃ¡lida");
         }
     } while (z != 0);
     return 0;
 }
-// FUNÇÃO PARA CADASTRAR USUÁRIO
+// FUNÃ‡ÃƒO PARA CADASTRAR USUÃRIO
 int validaruser(char *str, struct usuario user[], int n)
 {
     int jaexiste = 0;
