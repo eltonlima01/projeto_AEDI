@@ -1,7 +1,7 @@
 #include"estrutura.h"
 #include"usuarios.c"
 
-
+void produtos();
 void limparbuffer()
 {
     int ch;
@@ -35,7 +35,7 @@ int main()
             scanf("%s", loginsenha);
             if (logar(loginuser, loginsenha, user, qtduser) != 0)
             {
-                // Deu certo
+               void produtos();
             }
             else
             {
@@ -219,7 +219,7 @@ void excluirProduto(struct produto *produtos, int *qtd) {
     puts("Produto excluído com sucesso.");
 }
 
-int main() {
+void produtos() {
     setlocale(LC_ALL, "portuguese");
     int n = 3;
     struct produto *produtos = malloc(n * sizeof(struct produto));
@@ -255,5 +255,4 @@ int main() {
     } while (z != 0);
 
     free(produtos);
-    return 0;
 }
